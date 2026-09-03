@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "gift-banner": {
@@ -22,36 +31,79 @@
       "blocks": {
         "product-1": {
           "type": "product",
-          "settings": { "hotspot_x": 51, "hotspot_y": 63 }
+          "settings": {
+            "product": "black-leather-bag",
+            "hotspot_x": 51,
+            "hotspot_y": 63
+          }
         },
         "product-2": {
           "type": "product",
-          "settings": { "hotspot_x": 60, "hotspot_y": 46 }
+          "settings": {
+            "product": "blue-silk-tuxedo",
+            "hotspot_x": 60,
+            "hotspot_y": 46
+          }
         },
         "product-3": {
           "type": "product",
-          "settings": { "hotspot_x": 61, "hotspot_y": 22 }
+          "settings": {
+            "product": "chequered-red-shirt",
+            "hotspot_x": 61,
+            "hotspot_y": 22
+          }
         },
         "product-4": {
           "type": "product",
-          "settings": { "hotspot_x": 51, "hotspot_y": 25 }
+          "settings": {
+            "product": "classic-leather-jacket",
+            "hotspot_x": 51,
+            "hotspot_y": 25
+          }
         },
         "product-5": {
           "type": "product",
-          "settings": { "hotspot_x": 50, "hotspot_y": 32 }
+          "settings": {
+            "product": "classic-varsity-top",
+            "hotspot_x": 50,
+            "hotspot_y": 32
+          }
         },
         "product-6": {
           "type": "product",
-          "settings": { "hotspot_x": 61, "hotspot_y": 43 }
+          "settings": {
+            "product": "dark-denim-top",
+            "hotspot_x": 61,
+            "hotspot_y": 43
+          }
         }
       },
-      "block_order": ["product-1", "product-2", "product-3", "product-4", "product-5", "product-6"],
+      "block_order": [
+        "product-1",
+        "product-2",
+        "product-3",
+        "product-4",
+        "product-5",
+        "product-6"
+      ],
       "settings": {
         "heading": "Tisso vison in the wild",
         "columns": 3,
-        "bundle_options": "Black, Medium"
+        "bundle_product": "",
+        "bundle_options": "Black, Medium",
+        "add_to_cart_label": "Add to cart",
+        "option_placeholder": "Choose your [option]",
+        "select_options_label": "Please select all options.",
+        "added_label": "Added to cart.",
+        "sold_out_label": "Sold out",
+        "error_label": "Something went wrong. Please try again.",
+        "hotspot_label": "Quick add",
+        "close_label": "Close"
       }
     }
   },
-  "order": ["gift-banner", "gift-grid"]
+  "order": [
+    "gift-banner",
+    "gift-grid"
+  ]
 }
