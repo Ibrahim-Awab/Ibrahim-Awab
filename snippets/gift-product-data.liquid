@@ -1,0 +1,56 @@
+{% doc %}
+  Prints one product as a compact JSON payload for the quick-add popup.
+
+  Only the fields the popup needs are exported (instead of the full
+  `product | json`, which is many kilobytes per product), so the six tiles of
+  the grid stay light and the popup opens without a network request.
+
+  Prices are formatted server side with the `money` filter, so the JavaScript
+  never has to know about the shop's currency format.
+
+  @param {object} product - The product to export.
+
+  @example
+  <script type="application/json">{% render 'gift-product-data', product: block.settings.product %}</script>
+{% enddoc %}
+
+{%- liquid
+  assign description = product.description | strip_html | strip_newlines | truncate: 200
+-%}
+{
+  "id": {{ product.id }},
+  "title": {{ product.title | json }},
+  "price": {{ product.price | money | json }},
+  "description": {{ description | json }},
+  "image": {% if product.featured_image %}{{ product.featured_image | image_url: width: 400 | json }}{% else %}null{% endif %},
+  {%- comment -%}
+    Single variant products have one placeholder option ("Title / Default
+    Title"); exporting no options keeps the popup free of a useless input and
+    still resolves to that single variant.
+  {%- endcomment -%}
+  "options": [
+    {%- unless product.has_only_default_variant -%}
+    {%- for option in product.options_with_values -%}
+      {
+        "name": {{ option.name | json }},
+        "values": [
+          {%- for value in option.values -%}
+            {{ value.name | default: value | json }}{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ]
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+    {%- endunless -%}
+  ],
+  "variants": [
+    {%- for variant in product.variants -%}
+      {
+        "id": {{ variant.id }},
+        "available": {{ variant.available }},
+        "price": {{ variant.price | money | json }},
+        "options": {{ variant.options | json }},
+        "image": {% if variant.featured_image %}{{ variant.featured_image | image_url: width: 400 | json }}{% else %}null{% endif %}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}

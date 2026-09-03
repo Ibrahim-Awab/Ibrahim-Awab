@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "gift-banner": {
+      "type": "gift-banner",
+      "settings": {
+        "show_top_bar": true,
+        "logo_text": "Tisso Vison",
+        "top_message": "Find the ideal gift for your loved ones.",
+        "top_button_label": "Choose gift",
+        "top_button_link": "/collections/all",
+        "top_button_color": "#f8f36b",
+        "hero_height": 720,
+        "heading": "The Gift Guide",
+        "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "hero_button_label": "Shop now",
+        "hero_button_link": "/collections/all",
+        "strip_text": "Sustainable, ethically made clothes in sizes XXS to 6XL"
+      }
+    },
+    "gift-grid": {
+      "type": "gift-grid",
+      "blocks": {
+        "product-1": {
+          "type": "product",
+          "settings": { "hotspot_x": 51, "hotspot_y": 63 }
+        },
+        "product-2": {
+          "type": "product",
+          "settings": { "hotspot_x": 60, "hotspot_y": 46 }
+        },
+        "product-3": {
+          "type": "product",
+          "settings": { "hotspot_x": 61, "hotspot_y": 22 }
+        },
+        "product-4": {
+          "type": "product",
+          "settings": { "hotspot_x": 51, "hotspot_y": 25 }
+        },
+        "product-5": {
+          "type": "product",
+          "settings": { "hotspot_x": 50, "hotspot_y": 32 }
+        },
+        "product-6": {
+          "type": "product",
+          "settings": { "hotspot_x": 61, "hotspot_y": 43 }
+        }
+      },
+      "block_order": ["product-1", "product-2", "product-3", "product-4", "product-5", "product-6"],
+      "settings": {
+        "heading": "Tisso vison in the wild",
+        "columns": 3,
+        "bundle_options": "Black, Medium"
+      }
+    }
+  },
+  "order": ["gift-banner", "gift-grid"]
+}
