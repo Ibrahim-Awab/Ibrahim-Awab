@@ -1,7 +1,7 @@
 <h1 align="center">Ibrahim Awab</h1>
 
 <p align="center">
-  <strong>Full Stack AI Engineer · Shopify &amp; Odoo</strong>
+  <strong>Full Stack AI Engineer</strong>
 </p>
 
 <p align="center">
