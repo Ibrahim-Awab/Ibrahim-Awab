@@ -1,7 +1,7 @@
 <h1 align="center">Ibrahim Awab</h1>
 
 <p align="center">
-  <strong>Full Stack Developer · Node.js &amp; Python Backend · Shopify &amp; Odoo · AI/LLM Applications</strong>
+  <strong>Full Stack AI Engineer · Shopify &amp; Odoo</strong>
 </p>
 
 <p align="center">
