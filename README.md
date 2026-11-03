@@ -1,110 +1,336 @@
-<h1 align="center">Ibrahim Awab</h1>
+# 👋 Hi, I'm Ibrahim Awab
 
-<p align="center">
-  <strong>Full Stack AI Engineer</strong>
+### Full Stack Developer · Node.js & Python Backend · Shopify & Odoo · AI/LLM Applications
+
+<p align="left">
+  <a href="https://github.com/Ibrahim-Awab">
+    <img src="https://img.shields.io/badge/GitHub-Ibrahim--Awab-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/ibrahim-awab/">
+    <img src="https://img.shields.io/badge/LinkedIn-Ibrahim_Awab-0A66C2?style=for-the-badge" alt="LinkedIn" />
+  </a>
+  <a href="mailto:ibrahimawab50@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ibrahimawab50@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/ibrahim-awab/"><img src="https://img.shields.io/badge/LinkedIn-ibrahim--awab-0A66C2?style=flat-square" alt="LinkedIn: ibrahim-awab"></a>
-  <a href="mailto:ibrahimawab50@gmail.com"><img src="https://img.shields.io/badge/Email-ibrahimawab50%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email: ibrahimawab50@gmail.com"></a>
-  <img src="https://img.shields.io/badge/Open_to-Remote_%26_International_Roles-2ea44f?style=flat-square" alt="Open to remote and international roles">
-</p>
+I'm a **Full Stack Developer** with **3+ years of professional experience** building, integrating and maintaining **production web applications**.
+
+My work sits at the intersection of:
+
+**Backend Engineering → Full Stack Development → eCommerce (Shopify) → ERP/CRM (Odoo) → AI/LLM Applications**
+
+I work across the whole stack, from **REST APIs and backend architecture in Node.js, Express.js and Python**, through **Next.js and TypeScript frontends**, to **third-party integrations** and keeping production systems running.
+
+> **My goal:** Build reliable software that solves real business problems, whether that's an API, an online store, an ERP module or an AI-powered feature.
+
+Most of my professional work lives in private client repositories. The projects below are public samples.
 
 ---
 
-## About Me
+## 🚀 Featured Projects
 
-I'm **Ibrahim Awab**, a Full Stack Developer with **3+ years of professional experience** building, integrating and maintaining production web applications.
+### 🔗 LinkedIn Connection Manager
 
-My core strength is **backend development with Node.js, Express.js and Python**: designing REST APIs, integrating third-party services and keeping production systems reliable. On the frontend I build with **Next.js and TypeScript**.
+**A full stack dashboard for managing LinkedIn connections and planning engagement, with AI-generated comment suggestions.**
 
-Beyond general full stack work, I have delivered **Shopify eCommerce stores** from setup to production, built **custom Odoo ERP/CRM modules and websites**, and more recently developed **AI-powered applications** with local LLMs, RAG and LangChain.
+<a href="https://github.com/Ibrahim-Awab/linkedInUsers_Management_System">
+  <img src="https://img.shields.io/badge/📂_View_Repository-LinkedIn_Connection_Manager-2563EB?style=for-the-badge" alt="View repository" />
+</a>
 
-Most of my professional work lives in private client repositories. The public projects below are representative samples.
+The application lets users:
+
+- 👥 Store and organize LinkedIn connections in one place
+- ⭐ Mark important connections so they appear first
+- ⏱️ Set a per-connection engagement interval (how often to engage)
+- 🔎 Search connections from the dashboard
+- 🤖 Generate AI comment suggestions for posts through the OpenAI API
+- 📊 View engagement data in a dashboard UI
+
+#### Architecture
+
+```text
+                    👤 User
+                       │
+                       ▼
+          ┌─────────────────────────┐
+          │ Next.js 15 + React 19   │
+          │ TypeScript + Tailwind   │
+          └────────────┬────────────┘
+                       │
+                       ▼
+          ┌─────────────────────────┐
+          │ Next.js API Routes      │
+          │ /settings  /post  /gpt  │
+          └──────┬───────────┬──────┘
+                 │           │
+                 ▼           ▼
+       ┌──────────────┐ ┌──────────────┐
+       │ MongoDB      │ │ OpenAI API   │
+       │ (Mongoose)   │ │ Comment Gen  │
+       └──────────────┘ └──────────────┘
+```
+
+`Next.js` · `TypeScript` · `React` · `MongoDB` · `Mongoose` · `OpenAI API` · `REST API Routes` · `Tailwind CSS`
 
 ---
 
-## What I Work On
+### 🛍️ Shopify Horizon Theme: Custom Gift Guide
 
-### Backend & Full Stack Development
-- REST API design and backend architecture with **Node.js, Express.js and Python**
-- Full stack web applications with **Next.js, React and TypeScript**
-- Data modelling and caching with **MongoDB, MySQL and Redis**
-- Third-party API integrations, including blockchain data APIs and LinkedIn automation
-- Maintaining and extending production applications
+**A Shopify Horizon theme extended with a Gift Guide page built from scratch in Liquid and vanilla JavaScript.**
 
-### AI & LLM Applications
-- AI-powered features built on **local LLMs with Ollama**
-- **Retrieval-Augmented Generation (RAG)** pipelines with **LangChain**
-- LLM API integration in web applications (e.g. AI-generated comment suggestions)
+<a href="https://github.com/Ibrahim-Awab/shopify-horizon-gift-guide">
+  <img src="https://img.shields.io/badge/📂_View_Repository-Shopify_Gift_Guide-7AB55C?style=for-the-badge" alt="View repository" />
+</a>
 
-### eCommerce & ERP/CRM
-- **Shopify** stores built from scratch to production
-- Shopify theme development and customization in **Liquid**, plus app and API integrations
-- **Odoo** custom module development and customization of existing business modules
-- Odoo website development from **Figma** designs
+What I built:
+
+- 🎨 A configurable **gift banner** section (top bar, hero, announcement strip)
+- 🧱 A **product grid** section with a quick-add popup on each tile
+- ⚡ The popup reads product data rendered inline by Liquid, so it **opens with no extra network request**
+- 🎛️ Option pickers built dynamically from each product's own options
+- 🛒 Add to cart through Shopify's **Cart AJAX API** (`/cart/add.js`)
+- 🎁 A **bundle rule** that adds a companion product when specific variants are chosen
+- ✏️ All copy editable from the **theme customizer**
+- 🔄 Synced with the store through **Shopify's GitHub integration**
+
+#### How the quick-add works
+
+```text
+Theme Customizer (merchant picks products)
+              ↓
+Liquid section renders tiles + JSON product payload
+              ↓
+Customer clicks "+" on a tile
+              ↓
+gift-grid.js opens a native <dialog> and builds option pickers
+              ↓
+Customer selects a variant → Add to cart
+              ↓
+POST /cart/add.js  (+ bundled product if the variant matches the bundle rule)
+```
+
+`Shopify` · `Liquid` · `JavaScript` · `CSS` · `Cart AJAX API` · `Theme Customizer` · `GitHub Integration`
+
+---
+
+### 🕷️ LinkedIn Post Scraper
+
+**A Python automation script that collects recent posts and like status from LinkedIn connections.**
+
+<a href="https://github.com/Ibrahim-Awab/LinkedIn-Post-Scrapper">
+  <img src="https://img.shields.io/badge/📂_View_Repository-LinkedIn_Post_Scraper-3776AB?style=for-the-badge" alt="View repository" />
+</a>
+
+```text
+Login → Connections page → Each profile's recent activity → Extract author, post text, like status
+```
+
+`Python` · `Selenium` · `Browser Automation` · `Web Scraping`
+
+---
+
+# 💻 Technical Skills
+
+## ⚙️ Backend Engineering
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,python,ts,js&perline=5" alt="Backend technologies" />
+</p>
+
+**Technologies:** Node.js · Express.js · Python · TypeScript · JavaScript
+
+**Engineering:** `REST APIs` · `Backend Architecture` · `Third-Party API Integrations` · `Blockchain API Integrations` · `LinkedIn Automation` · `Production Maintenance`
+
+---
+
+## 🌐 Frontend Engineering
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css&perline=7" alt="Frontend technologies" />
+</p>
+
+**Technologies:** Next.js · React · TypeScript · JavaScript · Tailwind CSS · HTML5 · CSS3
+
+---
+
+## 🗄️ Databases & Caching
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,redis&perline=3" alt="Database technologies" />
+</p>
+
+**Technologies:** MongoDB · MySQL · Redis
+
+---
+
+## 🤖 AI & LLM Development
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Retrieval_Augmented_Generation-7C3AED?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+**Focus:** `Local LLMs` · `Ollama` · `RAG` · `LangChain` · `LLM API Integration` · `AI-Powered Applications`
+
+### How I build RAG applications
+
+```text
+Documents
+   ↓
+Loading & Chunking  (LangChain)
+   ↓
+Embeddings
+   ↓
+Vector Store
+   ↓
+User Question
+   ↓
+Similarity Search
+   ↓
+Context Building
+   ↓
+Local LLM  (Ollama)
+   ↓
+Grounded Answer
+```
+
+---
+
+## 🛍️ eCommerce: Shopify
+
+![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white)
+![Liquid](https://img.shields.io/badge/Liquid-5E8E3E?style=for-the-badge&logo=shopify&logoColor=white)
+
+- Shopify stores built **from scratch to production**
+- Theme development and customization in **Liquid**
+- Custom sections, blocks and storefront features
+- Third-party API and app integrations
+
+---
+
+## 🏢 ERP & CRM: Odoo
+
+![Odoo](https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma_to_Odoo-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+- **Custom Odoo modules** for specific business workflows
+- Customization of existing Odoo business modules
+- **Odoo website development** from Figma designs
 - ERP/CRM integrations with external systems
 
 ---
 
-## Tech Stack
+## 🛠️ Tools
 
-**Backend**<br>
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=flat-square)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,selenium&perline=4" alt="Development tools" />
+</p>
 
-**Frontend**<br>
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-**Databases & Caching**<br>
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-
-**AI & LLM**<br>
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![RAG](https://img.shields.io/badge/RAG-5A29E4?style=flat-square)
-
-**eCommerce & ERP**<br>
-![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=flat-square&logo=shopify&logoColor=white)
-![Liquid](https://img.shields.io/badge/Liquid-5E8E3E?style=flat-square&logo=shopify&logoColor=white)
-![Odoo](https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white)
-
-**Tools**<br>
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+`Git` · `GitHub` · `VS Code` · `Selenium`
 
 ---
 
-## Featured Projects
+# 🏗️ What I Bring
 
-### [LinkedIn Connection Manager](https://github.com/Ibrahim-Awab/linkedInUsers_Management_System)
-Full stack dashboard for managing LinkedIn connections and planning engagement. Users set a per-connection engagement interval, flag important connections so they surface first, and generate AI comment suggestions for posts through the OpenAI API. The backend is built on Next.js API routes with MongoDB (Mongoose) for persistence.
+### ⚙️ Backend & Integrations
+- REST API design with Node.js, Express.js and Python
+- Clean separation of routes, business logic and data access
+- Integrating third-party services, blockchain APIs and automation tools
+- Maintaining and extending applications already in production
 
-`Next.js 15` `TypeScript` `MongoDB` `Mongoose` `OpenAI API` `Tailwind CSS`
+### 🛒 Business Platforms
+- Taking Shopify stores from an empty account to a live store
+- Building Odoo modules and websites that match real business processes
+- Turning Figma designs into working, editable storefronts and websites
 
-### [Shopify Horizon Theme: Custom Gift Guide](https://github.com/Ibrahim-Awab/shopify-horizon-gift-guide)
-Shopify Horizon theme extended with a Gift Guide page built from scratch: a configurable banner section and a product grid with a quick-add popup. The popup reads product data rendered inline by Liquid, so it opens with no extra network request. It builds option pickers from each product's own options and posts to the Cart AJAX API, with a bundle rule that adds a companion product when specific variants are chosen. All copy is editable in the theme customizer, and the theme is synced through Shopify's GitHub integration.
-
-`Shopify` `Liquid` `JavaScript` `CSS` `Cart AJAX API`
-
-### [LinkedIn Post Scraper](https://github.com/Ibrahim-Awab/LinkedIn-Post-Scrapper)
-Python automation script that signs in to LinkedIn, visits connections' recent activity and extracts post authors, post text and like status. It was built as part of my LinkedIn automation work.
-
-`Python` `Selenium`
+### 🤖 Practical AI
+- Adding AI features to existing applications, not just demos
+- Running LLMs locally with Ollama for privacy and cost control
+- Grounding answers in your own data with RAG and LangChain
 
 ---
 
-## Let's Connect
+# 🎯 Current Direction
 
-I'm open to **remote and international** full stack and backend roles. The best ways to reach me:
+```text
+Full Stack Development
+        ↓
+Backend Engineering
+        ↓
+eCommerce & ERP Platforms
+        ↓
+AI / LLM Applications
+        ↓
+Production AI Systems
+```
 
-- **LinkedIn:** [linkedin.com/in/ibrahim-awab](https://www.linkedin.com/in/ibrahim-awab/)
-- **Email:** [ibrahimawab50@gmail.com](mailto:ibrahimawab50@gmail.com)
+My strongest interest is the intersection of **backend engineering + business platforms + AI**.
+
+---
+
+# 🌐 Connect With Me
+
+I'm open to **remote and international** full stack and backend roles.
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/ibrahim-awab/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge" alt="LinkedIn" />
+  </a>
+  <a href="mailto:ibrahimawab50@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/Ibrahim-Awab">
+    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
+
+---
+
+# 📊 GitHub Statistics
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.shion.dev/api?username=Ibrahim-Awab&theme=dark&hide_border=false&include_all_commits=false&count_private=false"
+    alt="Ibrahim Awab's GitHub statistics"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.shion.dev/api/top-langs/?username=Ibrahim-Awab&theme=dark&hide_border=false&layout=compact"
+    alt="Top programming languages"
+  />
+</p>
+
+---
+
+# 🐍 Contribution Activity
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/Ibrahim-Awab/Ibrahim-Awab/output/github-contribution-grid-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/Ibrahim-Awab/Ibrahim-Awab/output/github-contribution-grid-snake.svg"
+    />
+    <img
+      src="https://raw.githubusercontent.com/Ibrahim-Awab/Ibrahim-Awab/output/github-contribution-grid-snake.svg"
+      alt="GitHub contribution activity"
+    />
+  </picture>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Ibrahim-Awab&icon=0&color=0" alt="Profile views" />
+</p>
+
+<p align="center">
+  <i>Building software that works in production, for real businesses.</i>
+</p>
