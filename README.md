@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Ibrahim Awab
 
-### Full Stack Developer · Node.js & Python Backend · Shopify & Odoo · AI/LLM Applications
+### Full Stack AI Engineer
 
 <p align="left">
   <a href="https://github.com/Ibrahim-Awab">
